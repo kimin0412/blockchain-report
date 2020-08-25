@@ -133,7 +133,7 @@ domain - Block Chain
         - 블록체인에 별도로 저장되지 않음.
     
     - 트랜잭션 구조
-        - type txdata struct {
+        - ``` type txdata struct {
             AccountNonce //외부 트랜잭션의 수
             Price //트랜잭션 수수료
             GasLimit //트랜잭션 실행을 위해 지불할 최대 가스양
@@ -141,7 +141,7 @@ domain - Block Chain
             Amount //거래하고자 하는 ETH의 양
             Payload //메시지, 함수 호출 등
             V, R, S //서명정보
-        }
+        } 
     
     - 트랜잭션 리시트
         - 트랜잭션의 실행결과를 기록
